@@ -11,4 +11,4 @@ def main():
     print('Manufacturer:', phone.get_manufact())
     print('Model ')
 
-
+main()
