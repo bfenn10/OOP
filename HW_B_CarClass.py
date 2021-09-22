@@ -3,7 +3,7 @@ class Car:
     def __init__(self,year,make,speed):
         self.__year_model = year
         self.__make = make
-        self.__speed = 0
+        self.__speed = speed
 
     def set_year_model(self,year):
         self.__year_model = year
@@ -24,13 +24,13 @@ class Car:
         return self.__speed
 
     def accelerate(self):
-        self.speed += 5
+        self.__speed += 5
 
     def brake(self):
-        self.speed -= 5
+        self.__speed -= 5
 
     def get_speed(self):
-        return self.speed
+        return self.__speed
 
 
 
