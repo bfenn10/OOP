@@ -1,4 +1,4 @@
-import RetailItemClass as r
+import HW_A_RetailItemClass as r
 
 def main():
 
@@ -19,13 +19,13 @@ def make_list():
         price = float(input('Enter price per item: '))
         print()
 
-        items = RetailItem(item,units,price)
+        items = (item,units,price)
 
         item_list.append(items)
 
         return item_list
 
-    def display_list(item_list):
+    def display_list():
         for item in item_list:
             print(item.get_item_description())
             print(item.get_units_in_inventory())
