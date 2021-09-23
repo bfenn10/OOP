@@ -2,35 +2,9 @@ import HW_A_RetailItemClass as r
 
 def main():
 
-    inventory = make_list()
-
-    print('Here is the data you entered:')
-    display_list(inventory)
-
-def make_list():
-
-    item_list = []
-
-    print('Enter data for three items.')
-    for count in range(1,4):
-        print('Item Number ' + str(count) + ':')
-        item = input('Enter description of item: ')
-        units = float(input('Enter number of units in inventory: '))
-        price = float(input('Enter price per item: '))
-        print()
-
-        items = (item,units,price)
-
-        item_list.append(items)
-
-        return item_list
-
-    def display_list():
-        for item in item_list:
-            print(item.get_item_description())
-            print(item.get_units_in_inventory())
-            print(item.get_price())
-            print()
+    item_1 = r.RetailItem(description = 'Jacket',units = 12 ,price = 59.95)
+    item_2 = r.RetailItem(description = 'Designer Jeans',units = 40 ,price = 34.95)
+    item_3 = r.RetailItem(description = 'Shirt',units = 20 ,price = 24.95)
 
 main()
 
